@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #eaeaea;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 1120px;
+}
+header{
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px #ccc;
+  margin-top: 60px;
+  background: #f8f8f8;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 120px;
+}
+nav ul li{
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+nav ul li a{
+  color: #000;
+  text-decoration: none;
+}
+nav img{
+  margin-left: 20px;
+  width: 100px;
+}
+nav #navInput{
+  margin-right: 20px;
+  background: #f8f8f8;
+  border: 1px solid #c2c2c2;
+  height: 30px;
+  padding-left: 5px;
+  width: 110px;
+  transition: .5s;
+}
+nav #navInput:focus{
+  outline: none;
+}
+.recipesCarousel{
+  box-shadow: 0 0 10px #ccc;
+  height: 450px;
+  overflow: hidden;
+  width: 1120px;
+  position: relative;
+  z-index: 100;
+  margin-top: 85px;
+}
+.recipesCarouselImage{
+  display: flex;
+  justify-content: center;
+}
+.recipesCarouselText{
+  margin-top: 50px;
+  margin-left: 90px;
+  position: absolute;
+  width: 350px;
+}
+.recipesCarouselText img{
+  margin-bottom: 40px;
+}
+.recipesCarouselText h3{
+  margin-bottom: 30px;
+  color: #921026;
+  font-size: 24px;
+}
+.recipesCarouselText p{
+  line-height: 25px;
+  width: 360px;
+  margin-bottom: 25px;
+}
+.recipesCarouselText input{
+  background: transparent;
+  border: 1px solid #c2c2c2;
+  padding: 7px;
+  transition: .5s;
+}
+.recipesCarouselText input:hover{
+  border: 1px solid #fff;
+  background: #921026;
+  color: #fff;
+}
+.recipesCarouselImage img{
+}
+.carouselItem{
+  transition: 2s;
+  right: 0;
+}
+.carouselItem:nth-child(1){
+  position: absolute;
+  left: 0;
+}
+.carouselItem:nth-child(2){
+  position: absolute;
+  left: 160%;
+}
+.carouselItem:nth-child(3){
+  position: absolute;
+  left: 260%;
+}
+.recipeButtons{
+  cursor: default;
+  font-size: 30px;
+  margin-left: 530px;
+  margin-top: 420px;
+  z-index: 10;
+  position: relative;
+  bottom: 0;
+  color: #ccc;
+  border: 1px;
+}
+.recipeButtons span{
+  cursor: pointer;
+}
+.recipeButtons span:first-child{
+  color: #000;
+}
+.recipeCards{
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 10px #ccc;
+  background: #fff;
+  margin-top: 85px;
+}
+.recipeCardsWrap{
+  width: 300px;
+  height: 250px;
+}
+.recipeCardsWrap h3{
+  font-size: 18px;
+  font-weight: normal;
+}
+.recipeCardsWrap img{
+  width: 100%;
+}
+.cardData{
+  margin-top: 10px ;
+  display: flex;
+  color: #555;
+  width: 300px;
+  height: 40px;
+}
+.cardData img{
+  width: 12px;
+}
+.recipeBlock{
+  background: #fff;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+}
+.recipeBlock > img{
+  height: 450px;
+  width: 450px;
+}
+.recipeDerection{
+  margin: 25px 55px 25px 35px;
+  width: 100%;
+}
+.recipeDerection h2{
+  color: #055555;
+  font-size: 32px;
+}
+.derectionData{
+  margin-top: 10px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.derectionData div{
+  font-size: 20px;
+}
+.recipeDerection div img{
+  width: 15px;
+}
+.derectionData div img:nth-child(2){
+  width: 25px;
+}
+.derectionData input{
+  cursor: pointer;
+  border: 1px solid #c2c2c2;
+  padding: 7px 10px;
+  background: #fff;
+  transition: .5s;
+}
+.derectionData input:hover{
+  background: #055555;
+  color: #fff;
+}
+.recipe{
+  margin-top: 20px;
+  overflow: scroll;
+  height: 300px;
+  overflow-x: hidden;
+}
+.recipe h4{
+  font-size: 20px;
+}
+footer{
+  margin-top: 100px;
+  color: #acacac;
+  height: 150px;
+  background: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+}
+footer ul li{
+  text-transform: uppercase;
+  padding: 10px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: #acacac;
+}
